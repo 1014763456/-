@@ -7,15 +7,11 @@ using namespace std;
 int main(){
     int num;
     while(cin >> num){
-        int i=0;
-        int ans = 1;
-        int *arr =(int *)malloc(sizeof(int) * num);
-        while(i!=num)
-            cin >> arr[i++];
-        for(int i=0;i<num;i++){
-            if(arr[i]%2 == 1){
-                ans *=arr[i];
-            }
+        long long ans=1,temp;
+        for(int i=0;i<num;++i){
+            cin >> temp;
+            if(temp%2 == 1)
+                ans *= temp;
         }
         cout << ans << endl;
     }

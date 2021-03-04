@@ -22,7 +22,7 @@ using namespace std;
 int main(){
     double radius;
     while(cin >> radius){
-        double res = 4 * PI * radius * radius * radius/3;
+        double res = 4 * PI * radius * radius * radius / 3;
         printf("%.3f\n", res);
     }
 
